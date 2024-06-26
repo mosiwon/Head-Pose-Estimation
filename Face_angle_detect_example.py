@@ -47,6 +47,7 @@ while cap.isOpened():
             
             # 얼굴 방향 텍스트 생성
             text = detector.get_face_direction(pitch_pred, yaw_pred)
+            # 라디안을 각도로 변환
             pitch_pred_deg = pitch_pred * 180 / np.pi
             yaw_pred_deg = yaw_pred * 180 / np.pi
             roll_pred_deg = roll_pred * 180 / np.pi
