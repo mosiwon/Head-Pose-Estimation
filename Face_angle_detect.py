@@ -33,7 +33,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # 예시 2: 웹캠에서 프레임을 읽어 얼굴 각도와 방향을 계산(카메라를 사용하면 실행이 더 느려질 수 있습니다.)
-cap = cv2.VideoCapture(1)  # 웹캠 인덱스
+cap = cv2.VideoCapture(-1)  # 웹캠 인덱스
 while cap.isOpened():
     ret, img = cap.read()
     if ret:
